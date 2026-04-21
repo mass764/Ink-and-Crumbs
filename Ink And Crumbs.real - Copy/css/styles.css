@@ -1,0 +1,572 @@
+
+/* home page style stuff */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-image: linear-gradient(rgba(232, 216, 195, 0.82), rgba(232, 216, 195, 0.82)), url("../images/wood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2f1e17;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header {
+    background-color: #4a2c24;
+    padding: 16px 20px 12px;
+    text-align: center;
+    position: relative;
+}
+
+header::before,
+header::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-image: url("../images/vine.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+header::before {
+    top: 8px;
+    left: 8px;
+}
+
+header::after {
+    top: 8px;
+    right: 8px;
+    transform: scaleX(-1);
+}
+
+.logo {
+    display: inline-block;
+    background-color: rgba(245, 237, 227, 0.95);
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f5ede3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #d8b38a;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 4px solid #7b1f2a;
+    border-bottom: 4px solid #7b1f2a;
+}
+
+.hero img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(47, 30, 23, 0.65);
+    color: #f5ede3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 650px;
+}
+
+.hero-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #7b1f2a;
+    color: #f5ede3;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.button:hover {
+    background-color: #5f1620;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.hero {
+    padding: 0;
+}
+
+.about,
+.reviews {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about h2,
+.reviews h2,
+.preview h2 {
+    margin-bottom: 18px;
+    color: #4a2c24;
+    font-size: 2rem;
+}
+
+.about p,
+.preview p,
+.review p,
+footer p {
+    font-size: 1.1rem;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.text-content,
+.image-content {
+    flex: 1 1 400px;
+}
+
+.text-content {
+    padding: 10px;
+}
+
+.preview p {
+    margin-bottom: 10px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.review-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.review {
+    background-color: #f5ede3;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.review h3 {
+    margin-top: 12px;
+    color: #7b1f2a;
+}
+
+footer {
+    background-color: #4a2c24;
+    color: #f5ede3;
+    text-align: center;
+    padding: 20px;
+}
+
+/*-------------------------------------------------------*/
+/* menu style stuff */
+
+.menu-page {
+    background-image: linear-gradient(rgba(232, 216, 195, 0.82), rgba(232, 216, 195, 0.82)), url("../images/wood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-box {
+    background-color: rgba(245, 237, 227, 0.88);
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.menu-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #4a2c24;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    table-layout: fixed;
+}
+
+.col-item {
+    width: 30%;
+}
+
+.col-description {
+    width: 50%;
+}
+
+.col-price {
+    width: 20%;
+}
+
+th {
+    background-color: #4a2c24;
+    color: #f5ede3;
+    padding: 14px 12px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+th:nth-child(2) {
+    text-align: left;
+    padding-left: 25px;
+}
+
+td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #bfae9d;
+    font-size: 1.1rem;
+    color: #2f1e17;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    text-align: left;
+    padding-left: 25px;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgba(123, 31, 42, 0.08);
+}
+
+/*-------------------------------------------------------------*/
+/* Order page style stuff */
+
+.order-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.order-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.order-box {
+    flex: 2 1 700px;
+    background-color: rgba(245, 237, 227, 0.9);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.quick-menu {
+    flex: 1 1 280px;
+    background-color: rgba(74, 44, 36, 0.92);
+    color: #f5ede3;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.order-box h2,
+.quick-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.order-intro {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.quick-menu h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #d8b38a;
+}
+
+.quick-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.quick-menu li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+fieldset {
+    border: 2px solid #bfae9d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+legend {
+    font-weight: bold;
+    color: #7b1f2a;
+    padding: 0 8px;
+    font-size: 1.1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a69280;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    background-color: #4a2c24;
+}
+
+.secondary-button:hover {
+    background-color: #321b15;
+}
+
+/*----------------------------------------*/
+/* Books page style stuff */
+
+.books-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.books-box {
+    background-color: rgba(245, 237, 227, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    text-align: center;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #a69280;
+    font-size: 1rem;
+}
+
+.book-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book {
+    background-color: #f5ede3;
+    padding: 18px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.book h3 {
+    margin-bottom: 10px;
+    color: #4a2c24;
+}
+
+.book p {
+    font-size: 1rem;
+    color: #2f1e17;
+}
+
+.genres {
+    margin-top: 20px;
+}
+
+.genre-button {
+    background-color: #7b1f2a;
+    color: #f5ede3;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.genre-button:hover {
+    background-color: #5f1620;
+}
+
+.active-genre {
+    background-color: #4a2c24;
+}
+
+.hidden-book {
+    display: none;
+}
+
+/*-----------------------------------------------------------*/
+/* Contact page style stuff */
+
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.contact-box {
+    flex: 1 1 450px;
+    background-color: rgba(245, 237, 227, 0.9);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.contact-box h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a2c24;
+    text-align: center;
+}
+
+.contact-info p,
+.hours-box p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.hours-box {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: rgba(123, 31, 42, 0.08);
+    border-radius: 10px;
+}
+
+.hours-box h3 {
+    margin-bottom: 12px;
+    color: #7b1f2a;
+}
+
